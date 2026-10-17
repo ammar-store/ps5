@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCORPION HOST</title>
+  <title>AMMAR-STORE HOST</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -475,6 +475,79 @@
       #ring-pct { font-size: 52px; }
       .brand h1 { font-size: 38px; }
     }
+
+
+    /* Ammar-Store visual theme: supplied artwork, blue lighting and warm orange accents */
+    html, body {
+      background: linear-gradient(135deg, rgba(2, 8, 20, .56), rgba(2, 8, 20, .68)),
+                  url("../ammar-store-background.jpg") center center / cover fixed no-repeat !important;
+      background-color: #030817 !important;
+    }
+    :root {
+      --bg: #030817;
+      --bg-2: rgba(3, 12, 28, .90);
+      --panel: rgba(3, 9, 24, .88);
+      --panel-2: rgba(7, 31, 61, .92);
+      --line: rgba(0, 174, 255, .48);
+      --text: #f3f8ff;
+      --dim: #c0d3ee;
+      --accent: #13a9ff;
+      --accent-2: #ffad37;
+      --ok: #00d9a5;
+      --warn: #ff9a36;
+      --err: #ff4968;
+    }
+    #payloads {
+      background: rgba(3, 9, 24, .88) !important;
+      border-color: rgba(0, 174, 255, .52) !important;
+      backdrop-filter: blur(8px);
+    }
+    #console {
+      background: rgba(2, 9, 23, .86) !important;
+      border-color: rgba(0, 174, 255, .50) !important;
+      color: #f7fbff !important;
+    }
+    #sendBtn {
+      background: linear-gradient(110deg, #087be8, #00b8ff 58%, #ff9d2e) !important;
+      color: #fff !important;
+      border: 1px solid rgba(255,255,255,.22) !important;
+      box-shadow: 0 6px 22px rgba(0, 150, 255, .35), 0 0 15px rgba(255, 153, 43, .15) !important;
+    }
+    #sendBtn:hover:not(:disabled) {
+      filter: brightness(1.12);
+      box-shadow: 0 9px 28px rgba(0, 174, 255, .44), 0 0 18px rgba(255, 153, 43, .25) !important;
+    }
+    #resetBtn {
+      color: #f3f8ff !important;
+      background: rgba(4, 18, 40, .75) !important;
+      border-color: rgba(0, 174, 255, .55) !important;
+    }
+    #resetBtn:hover:not(:disabled) {
+      color: #fff !important;
+      border-color: #ffad3c !important;
+      background: rgba(0, 126, 220, .24) !important;
+    }
+    .payload:hover, .payload.selected {
+      background-color: rgba(0, 148, 255, .20) !important;
+      border-left-color: #ffae37 !important;
+    }
+    .payload.selected .check {
+      background: linear-gradient(135deg, #078cff, #ffad37) !important;
+      border-color: #d6edff !important;
+    }
+    .brand h1, #status, #payloads header .title, #credit span {
+      color: #16b8ff !important;
+      text-shadow: 0 0 12px rgba(0, 150, 255, .42);
+    }
+    .brand .dev span { color: #ffb23c !important; }
+    #credit { color: #d8e7fa !important; }
+    #bar-wrap { border-color: rgba(0, 174, 255, .55) !important; background: rgba(2, 8, 20, .75) !important; }
+    #bar, #ring-bar { stroke: #ffad37; }
+    #bar { background: linear-gradient(90deg, #087bff, #15d0ff, #ff9f32) !important; }
+    @media (max-width: 720px) {
+      html, body { background-attachment: scroll !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -485,8 +558,8 @@
       <div class="bg-ring r2"></div>
 
       <div class="brand">
-        <h1>SCORPION HOST</h1>
-        <div class="dev">developed by <span>Ahmed ESSAM</span></div>
+        <h1>AMMAR-STORE HOST</h1>
+        <div class="dev">customized by <span>Ammar-Store</span></div>
       </div>
 
       <div id="ring-wrap">
@@ -514,7 +587,7 @@
 
       <div id="console"></div>
 
-      <div id="credit">v1.0 · <span>Ahmed ESSAM</span></div>
+      <div id="credit">v1.0 · <span>Ammar-Store</span></div>
     </div>
 
     <div id="payloads">

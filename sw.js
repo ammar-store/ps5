@@ -6,6 +6,7 @@ const ASSETS_TO_CACHE = [
   './',
   './index.php',
   './index.html',
+  './ammar-store-background.jpg',
   './pic/pic.png',
 
   /* core src */

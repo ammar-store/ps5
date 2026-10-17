@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SCORPION HOST</title>
+  <title>AMMAR-STORE HOST</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg-1: #07090f;        /* Scorpion Base Dark */
-      --bg-2: #0c1019;        /* Scorpion Surface */
-      --bg-3: #020305;        /* Scorpion Deep Dark */
+      --bg-1: #07090f;        /* Ammar-Store Base Dark */
+      --bg-2: #0c1019;        /* Ammar-Store Surface */
+      --bg-3: #020305;        /* Ammar-Store Deep Dark */
       --left-text: #d6e4ff;
       --left-dim: #8aa0c4;
       --left-dim-2: #182030;
 
-      /* Customized to match your Neon Cyan Scorpion branding colors */
+      /* Customized to match your Neon Cyan Ammar-Store branding colors */
       --purple: #00f0ff;      
       --purple-2: #00d48c;    
       --purple-3: #bfaaff;
@@ -30,7 +30,7 @@
       height: 100%;
       background: var(--bg-1);
       color: var(--left-text);
-      font-family: 'Courier New', Courier, monospace; /* Scorpion Monospace Font */
+      font-family: 'Courier New', Courier, monospace; /* Ammar-Store Monospace Font */
       overflow: hidden;
       -webkit-font-smoothing: antialiased;
       font-size: 15px;
@@ -64,7 +64,7 @@
       color: var(--left-text);
     }
 
-    /* Circular Scorpion Logo Style Wrapper */
+    /* Circular Ammar-Store Logo Style Wrapper */
     .psh-logo {
       height: 105px;       
       width: 105px;        
@@ -420,17 +420,88 @@
       #sendBtn { font-size: 17px; padding: 16px; }
       #singleBtn { font-size: 16px; padding: 14px; }
     }
+
+
+    /* Ammar-Store visual theme: supplied artwork, blue lighting and warm orange accents */
+    html, body {
+      background: linear-gradient(135deg, rgba(2, 8, 20, .56), rgba(2, 8, 20, .68)),
+                  url("./ammar-store-background.jpg") center center / cover fixed no-repeat !important;
+      background-color: #030817 !important;
+    }
+    body::before { background: linear-gradient(180deg, rgba(0, 8, 22, .12), rgba(0, 5, 18, .34)) !important; }
+    :root {
+      --bg-1: #030817;
+      --bg-2: rgba(3, 12, 28, .90);
+      --bg-3: #030817;
+      --left-text: #f3f8ff;
+      --left-dim: #c0d3ee;
+      --left-dim-2: rgba(0, 174, 255, .40);
+      --purple: #13a9ff;
+      --purple-2: #ffc04a;
+      --purple-3: #b5e9ff;
+      --purple-deep: #075ab5;
+      --ok: #00d9a5;
+      --warn: #ff9a36;
+      --err: #ff4968;
+    }
+    #payloads {
+      background: rgba(3, 9, 24, .88) !important;
+      border-color: rgba(0, 174, 255, .52) !important;
+      backdrop-filter: blur(8px);
+    }
+    #console {
+      background: rgba(2, 9, 23, .86) !important;
+      border-color: rgba(0, 174, 255, .50) !important;
+      color: #f7fbff !important;
+    }
+    #sendBtn {
+      background: linear-gradient(110deg, #087be8, #00b8ff 58%, #ff9d2e) !important;
+      color: #fff !important;
+      border: 1px solid rgba(255,255,255,.22) !important;
+      box-shadow: 0 6px 22px rgba(0, 150, 255, .35), 0 0 15px rgba(255, 153, 43, .15) !important;
+    }
+    #sendBtn:hover:not(:disabled) {
+      filter: brightness(1.12);
+      box-shadow: 0 9px 28px rgba(0, 174, 255, .44), 0 0 18px rgba(255, 153, 43, .25) !important;
+    }
+    #singleBtn, #resetBtn {
+      color: #f3f8ff !important;
+      background: rgba(4, 18, 40, .75) !important;
+      border-color: rgba(0, 174, 255, .55) !important;
+    }
+    #singleBtn:hover:not(:disabled), #resetBtn:hover:not(:disabled) {
+      color: #fff !important;
+      border-color: #ffad3c !important;
+      background: rgba(0, 126, 220, .24) !important;
+    }
+    .payload:hover, .payload.selected {
+      background-color: rgba(0, 148, 255, .20) !important;
+      border-left-color: #ffae37 !important;
+    }
+    .payload.selected .check {
+      background: linear-gradient(135deg, #078cff, #ffad37) !important;
+      border-color: #d6edff !important;
+    }
+    .brand h1, #status, #payloads header .title, #credit span {
+      color: #16b8ff !important;
+      text-shadow: 0 0 12px rgba(0, 150, 255, .42);
+    }
+    .brand .dev span { color: #ffb23c !important; }
+    #credit { color: #d8e7fa !important; }
+    #bar-wrap { border-color: rgba(0, 174, 255, .55) !important; background: rgba(2, 8, 20, .75) !important; }
+    #bar { background: linear-gradient(90deg, #087bff, #15d0ff, #ff9f32) !important; }
+    @media (max-width: 720px) {
+      html, body { background-attachment: scroll !important; }
+    }
+
   </style>
 </head>
 <body>
   <div id="layout">
 
     <div id="ui">
-      <!-- Added custom circular glowing logo wrapper element -->
-      <img src="./logo.png" alt="Logo" class="psh-logo">
-      
       <div class="brand">
-        <h1>SCORPION HOST BY AHMED ESSAM</h1>
+        <h1>AMMAR-STORE HOST</h1>
         <div class="dev">version <span>v1.00</span></div>
       </div>
 
@@ -442,7 +513,7 @@
       <div id="console"></div>
 
       <!-- Footer navigation welcome text styling -->
-      <div id="credit">SCORPION HOST <b>//</b> FW 7.00–13.60 · <span>Welcome to SCORPION HACK ALL IN 1</span></div>
+      <div id="credit">AMMAR-STORE HOST <b>//</b> FW 7.00–13.60 · <span>WELCOME TO AMMAR-STORE</span></div>
     </div>
 
     <div id="payloads">
@@ -551,7 +622,7 @@
         }
 
         if (type === 'error') {
-          bar.style.background = '#ff3b52'; /* Integrated Scorpion bad color indicator variable link */
+          bar.style.background = '#ff3b52'; /* Integrated Ammar-Store bad color indicator variable link */
           status.textContent = 'failed: ' + text;
         }
       };
