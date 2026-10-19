@@ -70,6 +70,7 @@ const ASSETS_TO_CACHE = [
   './payloads/pldmgr_v0.6.3.elf', 
   './payloads/OnionHEN.elf'
   './payloads/autoloader.elf'
+'./payloads/elfldr-ps5.elf'
 ];
 
 
