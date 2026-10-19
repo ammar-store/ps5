@@ -72,8 +72,6 @@ const ASSETS_TO_CACHE = [
   './payloads/autoloader.elf'
 './payloads/elfldr-ps5.elf'
 ];
-
-
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>
