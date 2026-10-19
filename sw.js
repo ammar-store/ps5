@@ -71,6 +71,7 @@ const ASSETS_TO_CACHE = [
   './payloads/OnionHEN.elf'
   './payloads/autoloader.elf'
 './payloads/elfldr-ps5.elf'
+'./payloads/ProsperoMenu.elf'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
