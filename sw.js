@@ -67,7 +67,7 @@ const ASSETS_TO_CACHE = [
   './payloads/shadowmountplus.elf', 
   './payloads/webkit-autoloader-installer_v0.6.1.elf', 
   './payloads/ps5-app-dumper_v2.10.elf', 
-  './payloads/pldmgr_v0.5.2.elf', 
+  './payloads/pldmgr_v0.6.3.elf', 
   './payloads/OnionHEN.elf'
   './payloads/autoloader.elf'
 ];
