@@ -26,9 +26,11 @@
       --err: #ff3b52;
     }
 
-    html, body {
+        html, body {
       height: 100%;
-      background: var(--bg-1);
+      background: linear-gradient(135deg, rgba(7, 9, 15, 0.65), rgba(7, 9, 15, 0.75)),
+                  url("./img.jpg") center center / cover fixed no-repeat,
+                  var(--bg-1) !important;
       color: var(--left-text);
       font-family: 'Courier New', Courier, monospace; /* Scorpion Monospace Font */
       overflow: hidden;
@@ -36,6 +38,7 @@
       font-size: 15px;
       font-weight: 700;
     }
+
     body::before {
       content: '';
       position: fixed;
