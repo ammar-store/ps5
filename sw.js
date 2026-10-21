@@ -72,6 +72,7 @@ const ASSETS_TO_CACHE = [
   './payloads/autoloader.elf'
 './payloads/elfldr-ps5.elf'
 './payloads/ProsperoMenu.elf'
+'./payloads/LZ4-Game-Compressor.elf'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
