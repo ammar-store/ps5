@@ -26,9 +26,11 @@
       --err: #ff3b52;
     }
 
-    html, body {
+        html, body {
       height: 100%;
-      background: var(--bg-1);
+      background: linear-gradient(135deg, rgba(7, 9, 15, 0.65), rgba(7, 9, 15, 0.75)),
+                  url("./img.jpg") center center / cover fixed no-repeat,
+                  var(--bg-1) !important;
       color: var(--left-text);
       font-family: 'Courier New', Courier, monospace; /* Ammar-Store Monospace Font */
       overflow: hidden;
@@ -36,6 +38,7 @@
       font-size: 15px;
       font-weight: 700;
     }
+
     body::before {
       content: '';
       position: fixed;
@@ -526,39 +529,44 @@
       </div>
       
       <div id="list">
+        <div class="payload waiting" data-name="webkit-autoloader-installer_v0.6.1.elf">
+          <span class="check">✓</span>
+          <span class="name">WEBKIT-Autoloader 6.1</span>
+          <span class="status">waiting</span>
+        </div>
+        <div class="payload waiting" data-name="kstuff.elf">
+          <span class="check">✓</span>
+          <span class="name">Kstuff-lite 1.11 (upto-13.60)</span>
+          <span class="status">waiting</span>
+        </div>
+        <div class="payload waiting" data-name="shadowmountplus.elf">
+          <span class="check">✓</span>
+          <span class="name">Shadowmountplus1.7 BETA7</span>
+          <span class="status">waiting</span>
+        </div>
         <div class="payload waiting" data-name="OnionHEN.elf">
           <span class="check">✓</span>
           <span class="name">OnionHEN</span>
           <span class="status">waiting</span>
         </div>
-        <div class="payload waiting" data-name="kstuff.elf">
+         <div class="payload waiting" data-name="ProsperoMenu.elf">
           <span class="check">✓</span>
-          <span class="name">Kstuff-lite (upto-13.60)</span>
+          <span class="name">Prospero Menu</span>
           <span class="status">waiting</span>
         </div>
-        <div class="payload waiting" data-name="shadowmountplus.elf">
+        <div class="payload waiting" data-name="LZ4-Game-Compressor.elf">
           <span class="check">✓</span>
-          <span class="name">Shadowmountplus</span>
+          <span class="name">LZ4-compressor</span>
           <span class="status">waiting</span>
         </div>
-        <div class="payload waiting" data-name="game-compressor.elf">
+        <div class="payload waiting" data-name="PS5-dump-forge-0.4.0-ps5.elf">
           <span class="check">✓</span>
-          <span class="name">Game-compressor</span>
+          <span class="name">PS5 Dump,Ext Converter</span>
           <span class="status">waiting</span>
         </div>
-        <div class="payload waiting" data-name="webkit-autoloader-installer_v0.5.2.elf">
+        <div class="payload waiting" data-name="elfldr-ps5.elf">
           <span class="check">✓</span>
-          <span class="name">WEBKIT-Autoloader 5.2</span>
-          <span class="status">waiting</span>
-        </div>
-         <div class="payload waiting" data-name="pldmgr_v0.5.2.elf">
-          <span class="check">✓</span>
-          <span class="name">Payload Manager 5.2</span>
-          <span class="status">waiting</span>
-        </div>
-         <div class="payload waiting" data-name="ps5-app-dumper_v2.10.elf">
-          <span class="check">✓</span>
-          <span class="name">PS5 App Dumper v2.10</span>
+          <span class="name">elfloader 0.27</span>
           <span class="status">waiting</span>
         </div>
         <div class="payload waiting" data-name="etaHEN.elf">
@@ -566,6 +574,27 @@
           <span class="name">etaHEN (upto 13.60)</span>
           <span class="status">waiting</span>
         </div>
+        <div class="payload waiting" data-name="ps5-app-dumper_v2.10.elf">
+          <span class="check">✓</span>
+          <span class="name">PS5 App Dumper v2.10</span>
+          <span class="status">waiting</span>
+        </div>
+        <div class="payload waiting" data-name="game-compressor.elf">
+          <span class="check">✓</span>
+          <span class="name">Game-compressor</span>
+          <span class="status">waiting</span>
+        </div>
+         <div class="payload waiting" data-name="pldmgr_v0.6.3.elf">
+          <span class="check">✓</span>
+          <span class="name">Payload Manager 6.3</span>
+          <span class="status">waiting</span>
+        </div>
+         <div class="payload waiting" data-name="autoloader.elf">
+          <span class="check">✓</span>
+          <span class="name">Auto Loader</span>
+          <span class="status">waiting</span>
+        </div>
+         
       </div>
 
       <div id="footer">
