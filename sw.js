@@ -60,12 +60,12 @@ const ASSETS_TO_CACHE = [
 
  /* payloads */ 
 [
+  './payloads/webkit-autoloader-installer_v0.6.1.elf',
   './payloads/elfldr-ps5-1360.elf', 
   './payloads/etaHEN.elf', 
   './payloads/kexp_2026_05_25.bin', 
   './payloads/kstuff.elf', 
   './payloads/shadowmountplus.elf', 
-  './payloads/webkit-autoloader-installer_v0.6.1.elf', 
   './payloads/ps5-app-dumper_v2.10.elf', 
   './payloads/pldmgr_v0.6.3.elf', 
   './payloads/OnionHEN.elf'
