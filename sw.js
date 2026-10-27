@@ -74,6 +74,7 @@ const ASSETS_TO_CACHE = [
   './payloads/elfldr-ps5-1360.elf',
   './payloads/ProsperoMenu.elf',
   './payloads/LZ4-Game-Compressor.elf',
+  './payloads/game-compressor.elf',
   './payloads/PS5-dump-forge-0.4.0-ps5.elf'
 ];
 self.addEventListener('install', (event) => {
