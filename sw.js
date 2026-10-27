@@ -61,6 +61,7 @@ const ASSETS_TO_CACHE = [
  /* payloads */ 
 [
   './payloads/webkit-autoloader-installer_v0.6.1.elf',
+  './payloads/webkit-autoloader-installer_v0.4.0.elf',
   './payloads/webkit-autoloader-installer_v0.5.2.elf',
   './payloads/webkit-autoloader-installer_v0.5.1.elf',
   './payloads/elfldr-ps5-1360.elf', 
