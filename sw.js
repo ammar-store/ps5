@@ -64,6 +64,8 @@ const ASSETS_TO_CACHE = [
   './payloads/webkit-autoloader-installer_v0.4.0.elf',
   './payloads/webkit-autoloader-installer_v0.5.2.elf',
   './payloads/webkit-autoloader-installer_v0.5.1.elf',
+  './payloads/nanodns.elf',
+  './payloads/web-file-mgr-v1.12.elf',
   './payloads/elfldr-ps5-1360.elf', 
   './payloads/etaHEN.elf', 
   './payloads/kexp_2026_05_25.bin', 
