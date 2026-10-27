@@ -655,14 +655,7 @@
       const sendBtn   = document.getElementById('sendBtn');
       const singleBtn = document.getElementById('singleBtn');
 
-      const ALL_PAYLOADS = [
-        'pldmgr_v0.5.1.elf',
-        'kstuff.elf',
-        'shadowmountplus.elf',
-        'game-compressor.elf',
-        'webkit-autoloader-installer_v0.5.0.elf',
-        'etaHEN.elf',
-      ];
+      const ALL_PAYLOADS = Array.from(document.querySelectorAll('.payload')).map(el => el.dataset.name);
 
       const SINGLE_PAYLOAD = 'etaHEN.elf';
 
