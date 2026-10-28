@@ -59,22 +59,24 @@ const ASSETS_TO_CACHE = [
   './offsets/13.42.js',
   './offsets/13.60.js',
 
- /* payloads */ 
-[
-  './payloads/elfldr-ps5-1360.elf', 
+/* payloads */ 
+  './payloads/webkit-autoloader-installer_v0.6.1.elf',
+  './payloads/webkit-autoloader-installer_v0.4.0.elf',
+  './payloads/webkit-autoloader-installer_v0.5.1.elf',
+  './payloads/nanodns.elf',
+  './payloads/web-file-mgr-v1.12.elf',
   './payloads/etaHEN.elf', 
   './payloads/kexp_2026_05_25.bin', 
   './payloads/kstuff.elf', 
   './payloads/shadowmountplus.elf', 
-  './payloads/webkit-autoloader-installer_v0.6.1.elf', 
   './payloads/ps5-app-dumper_v2.10.elf', 
   './payloads/pldmgr_v0.6.3.elf', 
-  './payloads/OnionHEN.elf'
-  './payloads/autoloader.elf'
-'./payloads/elfldr-ps5.elf'
-'./payloads/ProsperoMenu.elf'
-'./payloads/LZ4-Game-Compressor.elf'
-'./payloads/PS5-dump-forge-0.4.0-ps5.elf'
+  './payloads/OnionHEN.elf',
+  './payloads/elfldr-ps5-1360.elf',
+  './payloads/ProsperoMenu.elf',
+  './payloads/LZ4-Game-Compressor.elf',
+  './payloads/game-compressor.elf',
+  './payloads/PS5-dump-forge-0.4.0-ps5.elf'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
