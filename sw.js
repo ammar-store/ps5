@@ -1,6 +1,6 @@
 /* PS5-Relapse Service Worker — full offline cache */
 
-const CACHE_NAME = 'ammar-ps5-20261122-v5';
+const CACHE_NAME = 'ammar-ps5-20261122-v6';
 
 const ASSETS_TO_CACHE = [
   "./",
@@ -53,6 +53,9 @@ const ASSETS_TO_CACHE = [
   "./offsets/9.40.js",
   "./offsets/9.60.js",
     "./payloads/kstuff.elf",
+  "./payloads/kraken-mount.elf",
+  "./payloads/web-file-mgr-v1.12.elf",
+  "./payloads/nanodns.elf",
   "./payloads/shadowmountplus.elf",
   "./payloads/OnionHEN.elf",
   "./payloads/ProsperoMenu.elf",
