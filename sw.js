@@ -1,6 +1,6 @@
 /* PS5-Relapse Service Worker — full offline cache */
 
-const CACHE_NAME = 'ammar-ps5-20261122-v1';
+const CACHE_NAME = 'ammar-ps5-20261122-v2';
 
 const ASSETS_TO_CACHE = [
   "./",
