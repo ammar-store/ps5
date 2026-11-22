@@ -1,6 +1,6 @@
 /* PS5-Relapse Service Worker — full offline cache */
 
-const CACHE_NAME = 'ammar-ps5-20261122-v2';
+const CACHE_NAME = 'ammar-ps5-20261122-v3';
 
 const ASSETS_TO_CACHE = [
   "./",
@@ -74,7 +74,7 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME).then((cache) =>
       Promise.all(
         ASSETS_TO_CACHE.map((url) =>
-          cache.add(url).catch((err) => {
+          cache.add(new Request(url, { cache: 'reload' })).catch((err) => {
             console.warn('[SW] skip cache:', url, err.message);
           })
         )
