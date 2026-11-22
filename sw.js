@@ -1,6 +1,6 @@
 /* PS5-Relapse Service Worker — full offline cache */
 
-const CACHE_NAME = 'ammar-ps5-20261122-v4';
+const CACHE_NAME = 'ammar-ps5-20261122-v5';
 
 const ASSETS_TO_CACHE = [
   "./",
@@ -52,13 +52,12 @@ const ASSETS_TO_CACHE = [
   "./offsets/9.20.js",
   "./offsets/9.40.js",
   "./offsets/9.60.js",
-  "./payloads/webkit-autoloader-installer_v0.6.1.elf",
-  "./payloads/kstuff.elf",
+    "./payloads/kstuff.elf",
   "./payloads/shadowmountplus.elf",
   "./payloads/OnionHEN.elf",
   "./payloads/ProsperoMenu.elf",
   "./payloads/LZ4-Game-Compressor.elf",
-  "./payloads/PS5-dump-forge-0.4.0-ps5.elf",
+  "./payloads/ps5-dump-forge-0.5.6-ps5.elf",
   "./payloads/elfldr-ps5.elf",
   "./payloads/etaHEN.elf",
   "./payloads/ps5-app-dumper_v2.10.elf",
