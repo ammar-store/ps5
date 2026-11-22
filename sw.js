@@ -1,6 +1,6 @@
 /* PS5-Relapse Service Worker — full offline cache */
 
-const CACHE_NAME = 'ammar-ps5-20261122-v3';
+const CACHE_NAME = 'ammar-ps5-20261122-v4';
 
 const ASSETS_TO_CACHE = [
   "./",
@@ -89,7 +89,8 @@ self.addEventListener('activate', (event) => {
       .then((keys) =>
         Promise.all(
           keys
-            .filter((key) => key !== CACHE_NAME)
+            .filter((key) => key !== CACHE_NAME &&
+              (key.startsWith('ps5-relapse-') || key.startsWith('ammar-ps5-')))
             .map((key) => caches.delete(key))
         )
       )
