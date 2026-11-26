@@ -60,7 +60,7 @@ const ASSETS_TO_CACHE = [
 
 /* payloads */ 
   './payloads/webkit-autoloader-installer_v0.8.1.elf',
-  './payloads/kraken-mount.elf',
+  './payloads/kstuff-1.15-dr-test3-stable.elf',
   './payloads/webkit-autoloader-installer_v0.5.1.elf',
   './payloads/elfldr-ps5-v0.27-b57d0e9.elf',
   './payloads/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf',
