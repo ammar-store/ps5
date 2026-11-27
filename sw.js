@@ -2,6 +2,7 @@
  
 const CACHE_NAME = 'ps5-relapse-v4';
 
+
 const ASSETS_TO_CACHE = [
   './',
   './index.php',
