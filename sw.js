@@ -1,5 +1,5 @@
 /* PS5-Relapse Service Worker — full offline cache */
-
+ 
 const CACHE_NAME = 'ps5-relapse-v4';
 
 const ASSETS_TO_CACHE = [
